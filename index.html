@@ -1,13 +1,272 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#064f52" />
+  <meta name="description" content="الموقع الرسمي لمركز 7 أكتوبر الطبي — رعاية صحية متكاملة بمعايير مهنية حديثة." />
+  <meta name="keywords" content="مركز طبي, عيادات, طب باطني, أسنان, جلدية, نساء وولادة, مختبر, صنعاء" />
+  <meta property="og:title" content="مركز 7 أكتوبر الطبي" />
+  <meta property="og:description" content="رعايتك أولويتنا — خدمات طبية متكاملة في مكان واحد." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>مركز 7 أكتوبر الطبي | رعايتك أولويتنا</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">تجاوز إلى المحتوى الرئيسي</a>
 
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p><span aria-hidden="true">⏰</span> السبت–الخميس: 8:00 صباحًا – 10:00 مساءً</p>
+      <div class="topbar-actions">
+        <a href="tel:+967000000000" aria-label="اتصل بالمركز">+967 000 000 000</a>
+        <span class="divider" aria-hidden="true"></span>
+        <span>صنعاء – اليمن</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="العودة إلى الصفحة الرئيسية">
+        <img src="assets/logo.svg" alt="شعار مركز 7 أكتوبر الطبي" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="التنقل الرئيسي">
+        <a class="active" href="#home">الرئيسية</a>
+        <a href="#about">عن المركز</a>
+        <a href="#services">التخصصات</a>
+        <a href="#doctors">الأطباء</a>
+        <a href="#quality">الجودة</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <a class="btn btn-primary nav-cta" href="#appointment">احجز موعدًا</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">رعاية طبية متكاملة وآمنة</span>
+          <h1 id="hero-title">صحتك بين أيدٍ مهنية<br /><span>ورعايتك أولويتنا</span></h1>
+          <p>يجمع مركز 7 أكتوبر الطبي نخبة من التخصصات والخدمات التشخيصية في بيئة حديثة، مع التركيز على سلامة المريض وجودة التجربة وسرعة الوصول إلى الرعاية.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#appointment">احجز موعدك الآن</a>
+            <a class="btn btn-ghost btn-lg" href="#services">استكشف التخصصات</a>
+          </div>
+          <div class="trust-row" aria-label="مزايا المركز">
+            <div><strong>7+</strong><span>تخصصات وخدمات</span></div>
+            <div><strong>6 أيام</strong><span>عمل أسبوعيًا</span></div>
+            <div><strong>مريض أولًا</strong><span>منهجية الرعاية</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="واجهة تعريفية بالمركز">
+          <div class="hero-card main-card">
+            <img src="assets/logo.svg" alt="شعار مركز 7 أكتوبر الطبي" />
+            <div class="pulse-line" aria-hidden="true"></div>
+            <h2>مركز 7 أكتوبر الطبي</h2>
+            <p>OCTOBER 7 MEDICAL CENTER</p>
+          </div>
+          <div class="floating-card card-a"><span aria-hidden="true">✓</span><div><strong>مواعيد منظمة</strong><small>حجز سريع ومتابعة واضحة</small></div></div>
+          <div class="floating-card card-b"><span aria-hidden="true">❤</span><div><strong>رعاية إنسانية</strong><small>خصوصية واحترام واهتمام</small></div></div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="quick-booking" aria-label="الحجز السريع">
+      <div class="container quick-booking-inner reveal">
+        <div>
+          <span>هل تحتاج إلى استشارة؟</span>
+          <h2>اختر التخصص والموعد المناسبين لك</h2>
+        </div>
+        <a class="btn btn-light" href="#appointment">ابدأ الحجز</a>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container split-grid">
+        <div class="about-visual reveal">
+          <div class="medical-pattern" aria-hidden="true"></div>
+          <div class="about-logo-card"><img src="assets/logo.svg" alt="شعار المركز" /></div>
+          <div class="experience-badge"><strong>رعاية</strong><span>متكاملة في مكان واحد</span></div>
+        </div>
+        <div class="section-copy reveal">
+          <span class="eyebrow">عن مركز 7 أكتوبر الطبي</span>
+          <h2>رؤية صحية حديثة تتمحور حول المريض</h2>
+          <p>نسعى إلى تقديم خدمات طبية تشخيصية وعلاجية مترابطة، تبدأ من الاستقبال المنظم والتقييم الدقيق، وتمتد إلى المتابعة والتثقيف الصحي. صُممت تجربة المركز لتقليل وقت الانتظار وتحسين التواصل بين المريض والفريق الطبي.</p>
+          <div class="feature-list">
+            <article><span>01</span><div><h3>رعاية متعددة التخصصات</h3><p>تنسيق أفضل بين العيادات والخدمات المساندة.</p></div></article>
+            <article><span>02</span><div><h3>معايير سلامة وخصوصية</h3><p>إجراءات واضحة لحماية بيانات المريض وسلامته.</p></div></article>
+            <article><span>03</span><div><h3>تجربة مريحة وسلسة</h3><p>حجز مبسط، إرشاد واضح، ومتابعة بعد الزيارة.</p></div></article>
+          </div>
+          <a class="text-link" href="#quality">تعرّف على معايير الجودة <span aria-hidden="true">←</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">التخصصات والخدمات</span><h2>رعاية متكاملة لاحتياجات الأسرة</h2></div>
+          <p>مجموعة من العيادات والخدمات الأساسية، قابلة للتحديث وفق التخصصات النهائية للمركز.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal"><div class="icon">🫀</div><h3>الطب الباطني</h3><p>تقييم الأمراض المزمنة والحادة، والمتابعة الوقائية وخطط العلاج.</p><a href="#appointment">احجز في العيادة</a></article>
+          <article class="service-card reveal"><div class="icon">🦷</div><h3>طب الأسنان</h3><p>فحوصات الأسنان والعلاج الوقائي والترميمي ضمن بيئة مريحة.</p><a href="#appointment">احجز في العيادة</a></article>
+          <article class="service-card reveal"><div class="icon">✨</div><h3>الأمراض الجلدية</h3><p>تشخيص وعلاج مشكلات الجلد والشعر والأظافر والإجراءات الجلدية.</p><a href="#appointment">احجز في العيادة</a></article>
+          <article class="service-card reveal"><div class="icon">🤰</div><h3>النساء والولادة</h3><p>متابعة صحة المرأة، الحمل، والفحوصات والاستشارات المتخصصة.</p><a href="#appointment">احجز في العيادة</a></article>
+          <article class="service-card reveal"><div class="icon">🧪</div><h3>المختبر الطبي</h3><p>فحوصات مخبرية أساسية ودقيقة مع تنظيم النتائج والمتابعة.</p><a href="#appointment">اطلب موعد فحص</a></article>
+          <article class="service-card reveal"><div class="icon">💊</div><h3>الصيدلية</h3><p>صرف الدواء والإرشاد الدوائي بما يدعم الاستخدام الآمن والفعال.</p><a href="#contact">تواصل للاستفسار</a></article>
+          <article class="service-card featured reveal"><div class="icon">＋</div><h3>خدمات التمريض</h3><p>قياسات حيوية، حقن، غيارات، ومتابعة تمريضية وفق تعليمات الطبيب.</p><a href="#appointment">اطلب الخدمة</a></article>
+          <article class="service-card reveal"><div class="icon">📋</div><h3>الفحوصات الدورية</h3><p>باقات تقييم صحي وقائي للأفراد والمؤسسات حسب الاحتياج.</p><a href="#appointment">استفسر عن الباقات</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pathway" aria-labelledby="pathway-title">
+      <div class="container">
+        <div class="section-head centered reveal"><span class="eyebrow">رحلة المريض</span><h2 id="pathway-title">أربع خطوات لرعاية أكثر سلاسة</h2></div>
+        <div class="steps-grid">
+          <article class="step reveal"><span>1</span><h3>احجز موعدك</h3><p>اختر التخصص والوقت ووسيلة التواصل.</p></article>
+          <article class="step reveal"><span>2</span><h3>استقبال وتقييم</h3><p>تسجيل سريع وقياسات أولية عند الحاجة.</p></article>
+          <article class="step reveal"><span>3</span><h3>استشارة وخطة</h3><p>تشخيص واضح وخطة علاج موثقة ومفهومة.</p></article>
+          <article class="step reveal"><span>4</span><h3>متابعة مستمرة</h3><p>تذكير ومراجعة للنتائج والتعليمات العلاجية.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section doctors" id="doctors">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">الفريق الطبي</span><h2>خبرات متخصصة تجمعها رعاية واحدة</h2></div>
+          <p>بطاقات تعريف جاهزة لإضافة أسماء الأطباء وصورهم ومواعيد عملهم.</p>
+        </div>
+        <div class="doctors-grid">
+          <article class="doctor-card reveal"><div class="doctor-photo"><span>د. —</span></div><div class="doctor-info"><h3>يُضاف اسم الطبيب</h3><p>استشاري الطب الباطني</p><small>السبت–الأربعاء</small></div></article>
+          <article class="doctor-card reveal"><div class="doctor-photo"><span>د. —</span></div><div class="doctor-info"><h3>يُضاف اسم الطبيب</h3><p>اختصاصي طب الأسنان</p><small>الأحد–الخميس</small></div></article>
+          <article class="doctor-card reveal"><div class="doctor-photo"><span>د. —</span></div><div class="doctor-info"><h3>يُضاف اسم الطبيبة</h3><p>اختصاصية النساء والولادة</p><small>حسب جدول العيادة</small></div></article>
+          <article class="doctor-card reveal"><div class="doctor-photo"><span>د. —</span></div><div class="doctor-info"><h3>يُضاف اسم الطبيب</h3><p>اختصاصي الأمراض الجلدية</p><small>حسب جدول العيادة</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quality" id="quality">
+      <div class="container quality-grid">
+        <div class="quality-copy reveal">
+          <span class="eyebrow light">جودة الرعاية</span>
+          <h2>تفاصيل صغيرة تصنع تجربة صحية أفضل</h2>
+          <p>يعتمد الموقع إطارًا تعريفيًا يبرز التزام المركز بالممارسات المهنية، مع إمكانية إضافة السياسات والاعتمادات الفعلية لاحقًا.</p>
+          <ul class="check-list">
+            <li>تأكيد هوية المريض قبل الإجراءات</li>
+            <li>تعقيم ومكافحة عدوى وفق بروتوكولات مكتوبة</li>
+            <li>مراجعة الأدوية والحساسية قبل الوصفة</li>
+            <li>سرية الملفات والمعلومات الصحية</li>
+            <li>قنوات واضحة للشكاوى وقياس رضا المراجعين</li>
+          </ul>
+        </div>
+        <div class="quality-panel reveal">
+          <div class="metric"><strong>01</strong><span>سلامة المريض</span></div>
+          <div class="metric"><strong>02</strong><span>دقة التشخيص</span></div>
+          <div class="metric"><strong>03</strong><span>تواصل واضح</span></div>
+          <div class="metric"><strong>04</strong><span>متابعة فعّالة</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-head centered reveal"><span class="eyebrow">آراء المراجعين</span><h2 id="testimonials-title">مساحة جاهزة لعرض تقييمات موثقة</h2><p>تُستبدل النصوص التالية لاحقًا بتقييمات حقيقية بعد موافقة أصحابها.</p></div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial reveal"><div class="stars" aria-label="5 من 5">★★★★★</div><p>“تجربة استقبال منظمة، وشرح واضح للخطة العلاجية.”</p><footer>نموذج تقييم — مراجع</footer></blockquote>
+          <blockquote class="testimonial reveal"><div class="stars" aria-label="5 من 5">★★★★★</div><p>“المكان مريح، والموعد كان قريبًا، والمتابعة ممتازة.”</p><footer>نموذج تقييم — مراجعة</footer></blockquote>
+          <blockquote class="testimonial reveal"><div class="stars" aria-label="5 من 5">★★★★★</div><p>“وجود العيادة والمختبر والخدمات المساندة في مكان واحد سهّل الزيارة.”</p><footer>نموذج تقييم — مراجع</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section appointment" id="appointment">
+      <div class="container appointment-grid">
+        <div class="appointment-copy reveal">
+          <span class="eyebrow light">حجز المواعيد</span>
+          <h2>أرسل طلبك وسيتواصل معك فريق الاستقبال</h2>
+          <p>هذا النموذج تجريبي في النسخة الحالية. يمكن ربطه لاحقًا بنظام حجز، بريد إلكتروني، واتساب للأعمال، أو قاعدة بيانات.</p>
+          <div class="contact-mini"><span>☎</span><div><small>للحجز المباشر</small><a href="tel:+967000000000">+967 000 000 000</a></div></div>
+          <div class="contact-mini"><span>✉</span><div><small>البريد الإلكتروني</small><a href="mailto:info@october7medical.com">info@october7medical.com</a></div></div>
+        </div>
+        <form class="appointment-form reveal" id="appointment-form" novalidate>
+          <div class="field-row">
+            <label>الاسم الكامل<input type="text" name="name" autocomplete="name" required placeholder="اكتب الاسم" /></label>
+            <label>رقم الهاتف<input type="tel" name="phone" autocomplete="tel" required placeholder="مثال: 77xxxxxxx" /></label>
+          </div>
+          <div class="field-row">
+            <label>التخصص<select name="specialty" required><option value="">اختر التخصص</option><option>الطب الباطني</option><option>طب الأسنان</option><option>الأمراض الجلدية</option><option>النساء والولادة</option><option>المختبر الطبي</option><option>خدمات التمريض</option></select></label>
+            <label>التاريخ المفضل<input type="date" name="date" required /></label>
+          </div>
+          <label>ملاحظات مختصرة<textarea name="message" rows="4" placeholder="اكتب سبب الزيارة أو الوقت المناسب للتواصل"></textarea></label>
+          <label class="consent"><input type="checkbox" name="consent" required /><span>أوافق على استخدام بياناتي للتواصل بشأن الموعد فقط.</span></label>
+          <button class="btn btn-gold btn-lg" type="submit">إرسال طلب الحجز</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="section-copy reveal"><span class="eyebrow">الأسئلة الشائعة</span><h2>معلومات مهمة قبل الزيارة</h2><p>يمكن تعديل الإجابات وفق السياسات الفعلية للمركز عند الإطلاق.</p><a class="btn btn-ghost" href="#contact">لدي سؤال آخر</a></div>
+        <div class="accordion reveal">
+          <details><summary>هل يلزم حجز مسبق؟</summary><p>يُفضّل الحجز لضمان تقليل وقت الانتظار، مع استقبال الحالات حسب القدرة التشغيلية.</p></details>
+          <details><summary>ما المستندات المطلوبة؟</summary><p>بطاقة الهوية وأي تقارير أو تحاليل سابقة وقائمة الأدوية الحالية عند توفرها.</p></details>
+          <details><summary>كيف أستلم نتائج الفحوصات؟</summary><p>يمكن تسليمها حضوريًا أو عبر قناة إلكترونية آمنة بعد اعتماد النظام النهائي.</p></details>
+          <details><summary>هل تتوفر خدمات منزلية؟</summary><p>تُضاف هذه الخدمة في الموقع إذا تم اعتمادها رسميًا من إدارة المركز.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="eyebrow">تواصل معنا</span><h2>نحن قريبون منك</h2></div><p>استبدل بيانات الاتصال التالية بالبيانات الرسمية قبل النشر النهائي.</p></div>
+        <div class="contact-grid">
+          <div class="contact-card reveal"><span>📍</span><h3>العنوان</h3><p>صنعاء – اليمن<br />يُضاف اسم الشارع والمعلم القريب</p></div>
+          <div class="contact-card reveal"><span>☎️</span><h3>الهاتف</h3><p><a href="tel:+967000000000">+967 000 000 000</a><br /><a href="tel:+967000000001">+967 000 000 001</a></p></div>
+          <div class="contact-card reveal"><span>✉️</span><h3>البريد</h3><p><a href="mailto:info@october7medical.com">info@october7medical.com</a><br /><a href="mailto:appointments@october7medical.com">appointments@october7medical.com</a></p></div>
+          <div class="contact-card reveal"><span>🕒</span><h3>ساعات العمل</h3><p>السبت–الخميس<br />8:00 ص – 10:00 م</p></div>
+        </div>
+        <div class="map-placeholder reveal" role="img" aria-label="مساحة مخصصة لخريطة موقع المركز">
+          <div><span>خريطة الموقع</span><p>تُربط هنا خريطة Google Maps بعد إدخال العنوان الرسمي.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/logo.svg" alt="شعار مركز 7 أكتوبر الطبي" /><p>رعاية صحية متكاملة، تواصل واضح، وتجربة تتمحور حول المريض.</p></div>
+      <div><h3>روابط سريعة</h3><a href="#about">عن المركز</a><a href="#services">التخصصات</a><a href="#doctors">الأطباء</a><a href="#appointment">حجز موعد</a></div>
+      <div><h3>الخدمات</h3><a href="#services">العيادات</a><a href="#services">المختبر</a><a href="#services">الصيدلية</a><a href="#quality">الجودة والسلامة</a></div>
+      <div><h3>تابعنا</h3><div class="socials"><a href="#" aria-label="فيسبوك">f</a><a href="#" aria-label="إنستغرام">◎</a><a href="#" aria-label="واتساب">◉</a></div><p class="footer-note">تُضاف روابط الحسابات الرسمية.</p></div>
+    </div>
+    <div class="container copyright"><span>© <span id="year"></span> مركز 7 أكتوبر الطبي. جميع الحقوق محفوظة.</span><span>سياسة الخصوصية · شروط الاستخدام</span></div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/967000000000" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب</a>
+  <button class="back-to-top" type="button" aria-label="العودة إلى أعلى الصفحة">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
